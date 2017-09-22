@@ -100,7 +100,7 @@ class Message
         return [
             'recipient' => $this->user_ref ? ['user_ref' => $this->recipient] : ['id' => $this->recipient],
             'message' => [
-                'text' => $this->text
+                'text' => 'TEST ' . $this->text
             ],
             'tag'=> $this->tag,
             'notification_type'=> $this->notification_type
